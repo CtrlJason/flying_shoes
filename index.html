@@ -5,36 +5,53 @@
         <meta name="viewport" content="width=device-width">
         <title>Flying Shoes</title>
         <link rel="icon" type="image/png" href="resources/Logo/Logo WEB.png">
+
+        <link rel="stylesheet" href="styles/style.css">
+        
     </head>
     <!--Vamos a poner todo el contenido del portal inicio-->
-    <body>
+    <body">
         <!--Contruimos el menu de inicio-->
         <!--construimos el logo de la pagina-->
-        <img src="resources/Logo/Logo sin fondo.png" width="64" height="64" alt="logo_empresa"> <!--Para cambiar la resolucion utilizamos width = altura, height = anchura-->
-        <h3><a href="index.html">Menu</a></h3>
-        <h3><a href="pag_shoe.html">Zapatos</a></h3> 
-        <h3><a href="pag_shopping_cart.html">Carrito</a></h3>
-
-        <!--Perfil del usuario-->
-        <h3><a href="pag_user.html">Usuario</a></h3>
-
+        <header>
+            <nav>
+                <img src="resources/Logo/Logo sin fondo.png" width="64" height="64" alt="logo_empresa"> <!--Para cambiar la resolucion utilizamos width = altura, height = anchura-->
+                <div>
+                    <a href="index.html"><img src="resources/icons/inicio.png" width="25" height="25" alt=""></a>
+                    <li><a href="index.html">Inicio</a></li>
+                    <a href="/web/pag_shoe.html"><img src="resources/icons/shoe.png" width="25" height="25" alt=""></a>
+                    <li><a href="/web/pag_shoe.html">Zapatos</a></li>
+                    <a href="/web/pag_location.html"><img src="resources/icons/ubication.png" width="25" height="25" alt=""></a>
+                    <li><a href="/web/pag_location.html">Ubicacion</a></li>
+                    <a href="/web/pag_shopping_cart.html"><img src="resources/icons/shopping_car.png" width="25" height="25" alt=""></a>
+                    <li><a href="/web/pag_shopping_cart.html">Carrito</a></li>
+                    <!--Perfil del usuario-->
+                    <div>
+                        <a href="/web/pag_user.html"><img src="resources/icons/user.png" width="25" height="25" alt="user"></a><br>
+                        <li><a href="/web/pag_user.html">Usuario</a></li>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <main>
             <!--Portada principal-->
-            <center><h1>!EL MEJOR CALZADO PARA TÍ¡</h1>
-            <img src="resources/Products/female/informal/zapato_azul_claro_urbano.jpg" width="240" height="240" alt="zapato_azul_claro_urbano">
-            <img src="resources/Products/male/informal/male-background-beauty-modern-leather.jpg" width="240" height="240" alt="male-background-beauty-modern-leather">
-            <img src="resources/Products/male/informal/one-white-sneaker-shoe-isolated-white.jpg" width="240" height="240" alt="one-white-sneaker-shoe-isolated-white">
-            </center>
-
-            <center><h1>CALZADO FORMAL</h1>
+            <div>
+                <h1>!EL MEJOR CALZADO PARA TÍ¡</h1>
+                <img src="resources/Products/female/informal/zapato_azul_claro_urbano.jpg" width="240" height="240" alt="zapato_azul_claro_urbano">
+                <img src="resources/Products/male/informal/male-background-beauty-modern-leather.jpg" width="240" height="240" alt="male-background-beauty-modern-leather">
+                <img src="resources/Products/male/informal/one-white-sneaker-shoe-isolated-white.jpg" width="240" height="240" alt="one-white-sneaker-shoe-isolated-white">
+                <br><button>Agregar al carrito</button>
+            </div>
+            <div>
+                <h1>CALZADO FORMAL</h1>
                 <img title="Zapato negro formal"
                 src="resources/Products/male/formal/pair-classic-clothing-white-black.jpg" width="240" height="240" alt="pair-classic-clothing-white-black">
                 <img title="Zapato cafe formal"
                 src="resources/Products/male/formal/brown-leather-slip-men-s-shoes-fashion.jpg" width="240" height="240" alt="brown-leather-slip-men-s-shoes-fashion">
                 <img title="Zapato azul formal"
                 src="resources/Products/male/formal/zapato_formal_azul.jpg" width="240" height="240" alt="woman-shoes">
-                </center>
-            
+                <br><button>Agregar al carrito</button>
+            </div>
             <!--Apartado izquierdo-->
             <h2>LO NUEVO</h2>
             <p>Mira lo mas <strong>nuevo</strong> en calsado que tenemos para tí</p>
@@ -59,10 +76,5 @@
             rel="noreferrel">Instagram</a>
         </footer>
     </body>
-
-
-
-
-
 
 </html>
